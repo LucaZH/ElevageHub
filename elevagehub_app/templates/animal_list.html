@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liste des animaux</title>
+  </head>
+  <body>
+    <h1>Liste des animaux</h1>
+    <ul>
+      {% for animal in animal_list %}
+        <li>{{ animal.name }} - {{ animal.species }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
